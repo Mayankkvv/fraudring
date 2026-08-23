@@ -38,3 +38,15 @@
 - Verified frontend at localhost:5173 successfully calls backend /health
 - Commit: "Step 04: Frontend foundation - React + Tailwind + backend health check"
 - Result: Working full-stack skeleton, frontend and backend verified connected
+
+
+
+## Step 05 — Synthetic Dataset Design
+- Designed full entity schema: customers, devices, ip_addresses, addresses, payment_instruments, coupons, merchant_accounts, transactions, payment_attempts, refunds, chargebacks
+- Defined graph relationships between entities
+- Designed hidden ground-truth fields (ring_id, is_ring_transaction) for evaluation only
+- Documented 8 abuse patterns to inject: account farming, device sharing, IP clustering, coupon abuse, refund abuse, coordinated timing, high-velocity, low-and-slow
+- Defined time-based train/val/test split strategy (70/15/15) with held-out rings
+- Created context/DATASET_SPEC.md
+- Commit: "Step 05: Design synthetic dataset schema and ground-truth abuse-ring spec"
+- Result: Clear blueprint ready for the dataset generator

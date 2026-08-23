@@ -27,3 +27,14 @@
 - Verified successful connection and /health still working
 - Commit: "Step 03: Connect MongoDB via Mongoose"
 - Result: Backend has a working, persistent database connection
+
+
+
+## Step 04 — Frontend Foundation
+- Scaffolded React app in client/ using Vite
+- Installed and configured Tailwind CSS
+- Replaced App.jsx with a live backend health-check page
+- Added client/.env and .env.example (VITE_API_URL)
+- Verified frontend at localhost:5173 successfully calls backend /health
+- Commit: "Step 04: Frontend foundation - React + Tailwind + backend health check"
+- Result: Working full-stack skeleton, frontend and backend verified connected

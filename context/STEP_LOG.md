@@ -70,3 +70,18 @@
 - All failures/warnings printed explicitly, never hidden
 - Commit: "Step 07: Add dataset validation - referential integrity, class balance, ring signal strength"
 - Result: Confirmed the dataset is trustworthy before any ML model is built on it
+
+
+
+## Step 08 — Transaction Risk Feature Engineering
+- Created feature_engineering/config.py (split ratios, held-out ring count)
+- Created feature_engineering/build_features.py:
+  - Customer velocity + amount z-score features (leakage-safe, expanding window)
+  - Refund/chargeback prior-count features per customer (leakage-safe, searchsorted)
+  - Coupon usage-before-limit features
+  - Device/IP shared-infrastructure counts (documented as dataset-wide simplification)
+  - Customer/merchant categorical features, one-hot encoded
+  - Chronological 70/15/15 train/val/test split with 2 rings forced test-only
+- Verified output row counts and class balance per split
+- Commit: "Step 08: Transaction risk feature engineering + chronological train/val/test split"
+- Result: ML-ready feature table ready for baseline model training

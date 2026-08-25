@@ -1,63 +1,63 @@
 {
   "threshold_used": 0.5,
   "classification_metrics": {
-    "precision": 0.9825,
-    "recall": 0.9656,
-    "f1": 0.974,
-    "pr_auc": 0.9968,
-    "false_positive_rate": 0.0072,
-    "true_positives": 1122,
-    "false_positives": 20,
-    "true_negatives": 2762,
-    "false_negatives": 40
+    "precision": 0.9966,
+    "recall": 1.0,
+    "f1": 0.9983,
+    "pr_auc": 1.0,
+    "false_positive_rate": 0.001,
+    "true_positives": 885,
+    "false_positives": 3,
+    "true_negatives": 2875,
+    "false_negatives": 0
   },
   "financial_metrics": {
-    "total_fraud_exposure": 8593180.88,
-    "estimated_prevented_loss": 8274374.31,
-    "false_negative_cost_missed_fraud_amount": 318806.57,
-    "false_positive_cost_assumed": 800.0,
+    "total_fraud_exposure": 6692802.02,
+    "estimated_prevented_loss": 6692802.02,
+    "false_negative_cost_missed_fraud_amount": 0.0,
+    "false_positive_cost_assumed": 120.0,
     "false_positive_unit_cost_assumption": 40.0,
-    "net_estimated_benefit": 8273574.31
+    "net_estimated_benefit": 6692682.02
   },
   "ring_level_detection": {
     "RING001": {
-      "num_transactions": 57,
+      "num_transactions": 24,
       "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING002": {
-      "num_transactions": 67,
+      "num_transactions": 41,
       "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING003": {
-      "num_transactions": 77,
+      "num_transactions": 50,
       "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING004": {
-      "num_transactions": 93,
+      "num_transactions": 50,
       "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING005": {
-      "num_transactions": 23,
+      "num_transactions": 74,
       "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING006": {
-      "num_transactions": 95,
+      "num_transactions": 46,
       "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING007": {
-      "num_transactions": 525,
-      "pct_flagged": 99.43,
+      "num_transactions": 350,
+      "pct_flagged": 100.0,
       "ring_detected": true
     },
     "RING008": {
-      "num_transactions": 225,
-      "pct_flagged": 83.56,
+      "num_transactions": 250,
+      "pct_flagged": 100.0,
       "ring_detected": true
     }
   }

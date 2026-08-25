@@ -13,8 +13,8 @@ RANDOM_SEED = 42
 # Entity counts (start small for fast local testing, scale up later for the real demo)
 NUM_CUSTOMERS = 2000
 NUM_MERCHANTS = 50
-NUM_DEVICES = 900          # fewer than customers so devices naturally get reused
-NUM_IP_ADDRESSES = 500
+NUM_DEVICES = 6000         # fewer than customers so devices naturally get reused
+NUM_IP_ADDRESSES = 6000
 NUM_COUPONS = 40
 
 # Abuse ring settings
